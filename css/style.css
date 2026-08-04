@@ -681,3 +681,18 @@ body.light-mode footer{
     color:#d1d5db;
     line-height:1.8;
 }
+.education-tags{
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.education-tags span{
+    background:#00bfff;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+}
