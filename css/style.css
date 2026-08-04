@@ -448,9 +448,13 @@ nav a:hover{
 }
 
 .contact-container{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
+    display:flex;
+    justify-content:center;
+}
+
+.contact-info{
+    max-width:700px;
+    text-align:center;
 }
 
 .contact-info h3{
@@ -695,4 +699,101 @@ body.light-mode footer{
     border-radius:20px;
     font-size:14px;
     font-weight:600;
+}
+
+
+/* ===== Experience ===== */
+
+.experience-card{
+    background:#10253d;
+    padding:30px;
+    border-radius:18px;
+    margin-bottom:25px;
+    overflow:hidden;
+
+    transition:all .35s ease;
+}
+
+.experience-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,191,255,.35);
+}
+
+.experience-card h3{
+    color:#38bdf8;
+    margin-bottom:8px;
+}
+
+.experience-card h4{
+    color:#ffffff;
+    margin-bottom:8px;
+}
+
+.experience-card span{
+    color:#9ca3af;
+    font-size:15px;
+}
+
+.experience-card p{
+    margin-top:20px;
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+.experience-card ul{
+    margin-top:20px;
+    padding-left:22px;
+}
+
+.experience-card li{
+    color:#d1d5db;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+.experience-card li{
+    transition:transform .3s ease, color .3s ease;
+}
+
+.experience-card:hover li{
+    transform:translateX(6px);
+}
+
+.experience-card:hover li::marker{
+    color:#00bfff;
+}
+/* ===== Social Links ===== */
+
+.social-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+    margin-top:30px;
+}
+
+.social-links a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    text-decoration:none;
+    color:#fff;
+
+    background:#10253d;
+
+    padding:14px 22px;
+
+    border-radius:12px;
+
+    transition:.35s;
+}
+
+.social-links a:hover{
+    background:#00bfff;
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,191,255,.35);
+}
+
+.social-links i{
+    font-size:20px;
 }
