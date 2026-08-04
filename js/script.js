@@ -1,5 +1,5 @@
 
-const text = "Full-Stack Data Analyst";
+const text = "Data Analyst | Power BI Developer | SQL Developer";
 let index = 0;
 
 function typeWriter() {
