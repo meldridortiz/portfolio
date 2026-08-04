@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    
+    <!-- Header -->
+    <header>
+        <nav>
+            <h2 class="logo">
+    <i class="fas fa-chart-line"></i> Meldrid Ortiz
+            </h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">
+    <i class="fas fa-moon"></i>
+</button>
+
+<div class="menu-toggle">
+    <i class="fas fa-bars"></i>
+</div>
+          
+        </nav>
+    </header>
+
+   <!-- Hero Section -->
+<section class="hero hidden" id="home">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-text">
+
+        <h1>Hello, I'm <span>Meldrid Ortiz</span></h1>
+
+        <h2><span id="typing"></span></h2>
+
+        <p>
+            I transform raw data into meaningful insights using SQL, Excel,
+            Power BI, and Python while building responsive web applications
+            using HTML, CSS, JavaScript, and GitHub.
+        </p>
+
+        <a href="resume/Meldrid_Ortiz_Resume.pdf" class="btn">
+            Download Resume
+        </a>
+
+    </div>
+
+
+    <img 
+    src="images/profile-cutout.png" 
+    class="hero-portrait"
+    alt="Meldrid Ortiz">
+
+
+</section>
+<section id="about" class="about hidden">
+
+    <div class="about-image">
+        <img src="images/profile.jpg" alt="Meldrid Ortiz">
+    </div>
+
+    <div class="about-content">
+        <h2>About Me</h2>
+
+        <p>
+            Hi! I'm <strong>Meldrid Ortiz</strong>, a Full-Stack Data Analyst with
+            experience in SQL, Power BI, Excel, Python, HTML, CSS, and JavaScript.
+        </p>
+
+        <p>
+            I enjoy transforming raw data into meaningful insights and creating
+            interactive dashboards and responsive web applications.
+        </p>
+
+        <p>
+            My goal is to help organizations make better decisions through
+            data-driven solutions.
+        </p>
+
+    </div>
+
+</section><!-- Skills Section -->
+<section id="skills" class="skills hidden">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3><i class="fas fa-database"></i> SQL</h3>
+            <p>MySQL, Joins, Views, Stored Procedures, Aggregation, Database Design</p>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fas fa-chart-pie"></i> Power BI</h3>
+            <p>Dashboards, DAX, Power Query, Data Modeling, KPI Reporting</p>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fab fa-python"></i> Python</h3>
+            <p>Pandas, NumPy, Matplotlib, Data Cleaning & Analysis</p>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fas fa-code"></i> Web Development</h3>
+            <p>HTML5, CSS3, JavaScript, Responsive Design</p>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fas fa-file-excel"></i> Microsoft Excel</h3>
+            <p>Pivot Tables, Charts, Power Query, Advanced Formulas</p>
+        </div>
+
+        <div class="skill-card">
+            <h3><i class="fab fa-github"></i> Git & GitHub</h3>
+            <p>Version Control, GitHub Pages, Portfolio Deployment</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- Projects Section -->
+<section id="projects" class="projects hidden">
+
+    <h2>Featured Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>DPWH Flood Control Dashboard</h3>
+            <p>
+                Interactive Power BI dashboard showing project completion,
+                budget utilization, contractor performance, and flood risk analysis.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Hospital Records SQL Analysis</h3>
+            <p>
+                Used MySQL to analyze patient records, treatment costs,
+                department performance, and hospital operations.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Sales Performance Dashboard</h3>
+            <p>
+                Built Power BI reports to monitor KPIs, revenue trends,
+                and business performance.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                Designed and developed this responsive portfolio using
+                HTML, CSS, JavaScript, and GitHub.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- Experience Section -->
+<section id="experience" class="experience hidden">
+
+    <h2>Work Experience</h2>
+
+    <div class="experience-card">
+
+        <h3>CSSD Technician</h3>
+        <h4>University of Cebu Medical Center</h4>
+        <span>2023 - Present</span>
+
+        <p>
+            Responsible for sterilization of surgical instruments,
+            preparation of operating room supplies, inventory management,
+            quality assurance, and compliance with infection control standards.
+        </p>
+
+    </div>
+
+    <div class="experience-card">
+
+        <h3>Nurse Aide</h3>
+        <h4>University of Cebu Medical Center</h4>
+        <span>2021 - Present</span>
+
+        <p>
+            Assisted healthcare professionals with patient care,
+            monitored vital signs, prepared patients for procedures,
+            and maintained accurate medical records.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="certifications hidden">
+
+    <h2>Certifications</h2>
+
+    <div class="certifications-container">
+
+        <!-- Excel -->
+        <div class="certificate-card">
+            <img src="images/certificates/excel.jpg" alt="Excel Certificate">
+
+            <h3>Microsoft Excel</h3>
+
+            <p>Advanced Excel for Data Analysis and Reporting</p>
+
+            <a href="certificates/Excel_Certificate.pdf"
+               target="_blank"
+               class="btn">
+               View Certificate
+            </a>
+        </div>
+
+        <!-- Power BI -->
+        <div class="certificate-card">
+            <img src="images/certificates/powerbi.jpg" alt="Power BI Certificate">
+
+            <h3>Power BI</h3>
+
+            <p>Power BI Dashboard Development and Data Visualization</p>
+
+            <a href="certificates/PowerBI_Certificate.pdf"
+               target="_blank"
+               class="btn">
+               View Certificate
+            </a>
+        </div>
+
+        <!-- MySQL -->
+        <div class="certificate-card">
+            <img src="images/certificates/mysql.jpg" alt="MySQL Certificate">
+
+            <h3>MySQL</h3>
+
+            <p>Database Design, SQL Queries, Joins, Views, and Data Analysis</p>
+
+            <a href="certificates/MySQL_Certificate.pdf"
+               target="_blank"
+               class="btn">
+               View Certificate
+            </a>
+        </div>
+
+        <!-- HTML -->
+        <div class="certificate-card">
+            <img src="images/certificates/html.jpg" alt="HTML Certificate">
+
+            <h3>HTML, CSS & JavaScript</h3>
+
+            <p>Responsive Web Development Fundamentals</p>
+
+            <a href="certificates/WebDev_Certificate.pdf"
+               target="_blank"
+               class="btn">
+               View Certificate
+            </a>
+        </div>
+
+    </div>
+
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact hidden">
+
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Let's Connect!</h3>
+
+            <p><i class="fas fa-envelope"></i> meldridortiz@gmail.com</p>
+
+            <p><i class="fas fa-phone"></i> +63 9917001828</p>
+
+            <p><i class="fas fa-location-dot"></i> Cebu, Philippines</p>
+
+            <p>💼 LinkedIn: linkedin.com/in/meldridortiz-dataanalyst</p>
+
+            <p><i class="fab fa-github"></i> github.com/yourusername</p>
+
+        </div>
+
+        <form
+    class="contact-form"
+    action="https://formsubmit.co/meldridortiz@gmail.com"
+    method="POST">
+
+    <input type="text" name="Name" placeholder="Your Name" required>
+
+    <input type="email" name="Email" placeholder="Your Email" required>
+
+    <textarea
+        name="Message"
+        rows="6"
+        placeholder="Your Message"
+        required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Portfolio Message">
+
+    <button type="submit" class="btn">
+        Send Message
+    </button>
+
+</form>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

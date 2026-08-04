@@ -1,0 +1,53 @@
+
+const text = "Full-Stack Data Analyst";
+let index = 0;
+
+function typeWriter() {
+    if (index < text.length) {
+        document.getElementById("typing").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100);
+    }
+}
+
+window.addEventListener("load", () => {
+    typeWriter();
+});
+// Scroll Animation
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+
+hiddenElements.forEach((el) => observer.observe(el));
+// ===== Mobile Menu =====
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
+// ===== Test Theme Button =====
+
+const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+
+    const icon = themeToggle.querySelector("i");
+
+    if (document.body.classList.contains("light-mode")) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
+});
