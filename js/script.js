@@ -51,12 +51,8 @@ themeToggle.addEventListener("click", () => {
         icon.classList.add("fa-moon");
     }
 });
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector("nav ul");
 
-menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
+
 document.querySelectorAll("nav ul li a").forEach(link => {
 
     link.addEventListener("click", () => {
