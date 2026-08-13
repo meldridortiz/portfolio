@@ -71,3 +71,21 @@ The original dataset is provided as:
 
 ```text
 hospital-records.xlsx
+
+## 🔎 SQL Analysis Results
+
+### 1. High-Cost Departments
+
+![High-Cost Departments Result](./results/high-cost-departments.png)
+
+### 2. Long-Stay Departments
+
+![Long-Stay Departments Result](./results/long-stay-departments.png)
+
+### 3. Costly Doctors
+
+![Costly Doctors Result](./results/costly-doctors.png)
+
+### 4. Elderly Patient Trend
+
+![Elderly Patient Trend Result](./results/elderly-patient-trend.png)
