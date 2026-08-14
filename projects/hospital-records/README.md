@@ -72,7 +72,9 @@ The original dataset is provided as:
 ```text
 hospital-records.xlsx
 
-## 🔎 SQL Analysis Results
+---
+
+# 🔎 SQL Analysis Results
 
 ### 1. High-Cost Departments
 
