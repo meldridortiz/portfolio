@@ -62,3 +62,68 @@ document.querySelectorAll("nav ul li a").forEach(link => {
     });
 
 });
+
+/* =========================================================
+   SKILL PROGRESS ANIMATION
+========================================================= */
+
+
+const progressBars =
+document.querySelectorAll(
+    ".progress-bar"
+);
+
+
+
+const progressObserver =
+new IntersectionObserver(
+(entries)=>{
+
+
+    entries.forEach(entry=>{
+
+
+        if(entry.isIntersecting){
+
+
+            const width =
+            entry.target.dataset.width;
+
+
+
+            entry.target.style.width =
+            width;
+
+
+
+            progressObserver.unobserve(
+                entry.target
+            );
+
+
+        }
+
+
+    });
+
+
+},
+{
+
+    threshold:.5
+
+});
+
+
+
+
+
+progressBars.forEach(bar=>{
+
+
+    progressObserver.observe(
+        bar
+    );
+
+
+});
